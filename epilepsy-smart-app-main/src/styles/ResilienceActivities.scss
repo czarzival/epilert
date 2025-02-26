@@ -1,0 +1,229 @@
+@import './library/colors.scss';
+@import './library/variables.scss';
+
+.resilience-activities{
+    height: auto;
+
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text-page{
+      font-family: 'Poppins';
+      padding: 10px 5px;
+      .title{
+        display: flex;
+        h3{
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        }
+      }
+      .header-nav {
+        border-bottom: 1px solid #EAECEF;
+        button {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+          color: $ema-grey-4;
+          width: fit-content;
+          height: 20px;
+          margin-right: 5px;
+        }
+        button.selected {
+            border-bottom: 2px solid $ema-red-0;
+        }
+      }
+      &-body{
+        margin-top: 20px;
+        p{
+          font-size: 13.5px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+        h5{
+          font-size: 15px;
+        }
+        ul{
+          li{
+            font-size: 13.5px;
+            line-height: 18px;
+          }
+        }
+      }
+      .quotes-body{
+        .circle{
+          height: 15px;
+          width: 15px;
+          border-radius: 100%;
+        }
+        .quotes{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px 0;
+        }
+        .text{
+          width: 92%;
+          text-align: justify;
+          line-height: 16px;
+          padding-bottom: 0;
+        }
+        p.text{
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+      .pagination{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        position: relative;
+        bottom: 10px;
+        margin-top: 40px;
+        button{
+          padding: 4px 10px;
+          width: 36px;
+          border: none;
+          outline: none;
+          border-radius: 6px;
+          cursor: pointer;
+          margin-right: 8px;
+          margin-top: 5px;
+        }
+        button.selected{
+          background-color: $ema-lilac-1;
+          color: white;
+        }
+      }
+    }
+}
+.tab-component {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    width: 66vw;
+    margin-bottom: 7px;
+    border-bottom: 0.2px solid #ccc;
+  }
+  
+  .tab-header button {
+    padding: 8px 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+   
+  }
+  
+  .tab-header button.active {
+    border-bottom: 1px solid #553791;
+  }
+  
+ 
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  .Journal-card{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background-color:transparent;
+    // border-left: 10px solid green;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+  }
+  textarea {
+    padding: 10px;
+    margin-top: 30px;
+    width: 270px;
+    height:260px;
+    border-radius: 10px;
+    background-color:white ;
+    border: 1px solid #f4f1f1;
+    box-shadow: 1px 1px 1px	#F5F5F5;
+
+  }
+  .text-area-styles {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    resize: none;
+    transition: height 0.3s ease-out;
+  }
+  
+
+
+  .button-styles {
+    border-style: none;
+    background-color: transparent;
+    color: purple;
+    font-weight: bold;
+    margin-left: 240px;
+  }
+
+  .delete-modal{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    .modal-title{
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .buttons-row{
+      display: flex;
+      flex-direction: row;
+      margin-top: 4rem;
+      justify-content: space-between;
+      width: 80%;
+      .cancel-button{
+        border-style: none;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+      }
+      .ok-button{
+        border-style: none;
+        background-color: transparent;
+        color: purple;
+        font-weight: bold;
+      }
+
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .tab-component {
+        max-width: 17rem; 
+    }
+    .tab-header {
+      max-width: 17rem;
+    }
+    .text-area-styles {
+      width: 90%;
+    }
+}
